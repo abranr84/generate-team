@@ -73,7 +73,7 @@ function addTeamMember() {
         if (val.what_type === "Engineer") {
             engineerQuery();
         } else if (val.what_type === "Intern") {
-            internQuery();
+            interQuery();
         } else {
             createInflate();
         }
@@ -148,7 +148,7 @@ function interQuery() {
         const intern = new Intern(val.name, val.id, val.email, val.school);
         console.table(intern);
         teamMembers.push(intern);
-        addTeamMembers();
+        addTeamMember();
     });
 }
 
